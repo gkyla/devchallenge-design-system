@@ -1,0 +1,140 @@
+.wrapper {
+   position: relative;
+   height: 100vh;
+   display: flex;
+
+   .hamburger {
+      position: absolute;
+      z-index: 10;
+      top: 25px;
+      right: 25px;
+      padding: 10px;
+      transition: 0.3s all ease-in-out;
+      cursor: pointer;
+      background-color: #d8d8d8;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      border: none;
+
+      &:hover {
+         background-color: #8f8f8f;
+      }
+
+      &.navisactive {
+         background-color: #e4e4e4;
+         box-shadow: 0 0 5px #fff;
+      }
+
+      img {
+         width: 100%;
+      }
+   }
+
+   // NAVIGATE
+   .nav {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      z-index: 10;
+      overflow: hidden;
+      transition: 0.5s all ease-in-out;
+      top: 0;
+      left: 0%;
+      visibility: hidden;
+      width: 0;
+      background-color: #fafbfd;
+      height: 100vh;
+
+      // Toggle
+      &.active {
+         display: flex;
+         width: 100vw;
+         visibility: visible;
+         transform: translateX(0);
+      }
+
+      .nav-lists {
+         width: 100%;
+         flex-basis: 400px;
+         position: relative;
+         display: flex;
+         align-items: center;
+         flex-direction: column;
+      }
+   }
+
+   main {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      overflow-x: hidden;
+      overflow-y: auto;
+      flex: 1;
+      text-align: left;
+      padding: 20px 0;
+      padding-left: 30px;
+      transition: 0.3s ease-in all;
+      background-color: white;
+
+      &.navIsActive {
+         background-color: gray;
+      }
+   }
+
+   footer {
+      margin-top: auto;
+      color: #a9a9a9;
+      padding: 40px 0;
+   }
+}
+
+@media (min-width: 450px) {
+   .wrapper {
+      .nav {
+         // Toggle
+         &.active {
+            width: 80vw;
+         }
+      }
+   }
+}
+
+@media screen and (min-width: 850px) {
+   .wrapper {
+      main {
+         &.navIsActive {
+            background-color: unset;
+         }
+      }
+
+      .hamburger {
+         display: none;
+      }
+
+      .nav {
+         text-align: left;
+         position: static;
+         width: 240px;
+         display: flex;
+         visibility: visible;
+
+         &.active {
+            width: 240px;
+            display: flex;
+            align-items: unset;
+            position: relative;
+         }
+
+         .nav-lists {
+            .nav-link {
+               padding-left: 30px;
+               span {
+                  width: 100%;
+                  padding-left: 30px;
+               }
+            }
+         }
+      }
+   }
+}

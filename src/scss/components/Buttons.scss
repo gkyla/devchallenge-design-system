@@ -1,0 +1,146 @@
+// ( i think )
+// Do not need to import the varibles helper.
+// Since this file imported to Vue components & also since we use prependData in the config file
+// the file that we imported to prependData now becomes global
+
+button {
+   // Default Styling
+   font-family: 'Noto Sans JP', sans-serif;
+   font-weight: 500;
+   transition: 0.2s ease-in-out all;
+   display: inline-flex;
+   align-items: center;
+   border: none;
+   cursor: pointer;
+   color: rgba($color: #3f3f3f, $alpha: 100%);
+   background-color: #e0e0e0;
+   padding: 9px 20px;
+   border-radius: 6px;
+   box-shadow: 0 2px 3px 0px rgba(51, 51, 51, 0.2);
+
+   &:disabled {
+      pointer-events: none !important;
+   }
+
+   &:hover,
+   &:focus {
+      background-color: #aeaeae;
+   }
+
+   .material-icons {
+      &.starticon {
+         padding-right: 10px;
+      }
+
+      &.endicon {
+         padding-left: 10px;
+      }
+   }
+
+   // ---- Demo Hover & Focus
+   &[demo='primary'] {
+      background-color: $hoverColorPrimary !important;
+   }
+   &[demo='outline'] {
+      background-color: $hoverVariantOutlineText !important;
+   }
+   &[demo='text'] {
+      background-color: $hoverVariantOutlineText !important;
+   }
+   &[demo='default'] {
+      background-color: $hoverColorDefault !important;
+   }
+   &[demo='secondary'] {
+      background-color: $hoverColorSecondary !important;
+   }
+   &[demo='danger'] {
+      background-color: $hoverColorDanger !important;
+   }
+
+   // ---- Start Variant Props
+   &[variant='outline'] {
+      background-color: white;
+      border: 1px solid #3d5afe;
+      color: #3d5afe;
+
+      &:hover,
+      &:focus {
+         background-color: $hoverVariantOutlineText;
+      }
+   }
+
+   &[variant='text'] {
+      background-color: white;
+      box-shadow: unset;
+      color: #3d5afe;
+
+      &:disabled {
+         color: #aeaeae;
+      }
+
+      &:hover,
+      &:focus {
+         background-color: $hoverVariantOutlineText;
+      }
+   }
+   // ---- End Variant Props
+
+   &[starticon*=''],
+   &[endicon*=''] {
+      background-color: #3d5afe;
+   }
+
+   // ---- Start Color Props
+   &[color='primary'] {
+      background-color: #2962ff;
+      color: white;
+
+      &:hover,
+      &:focus {
+         background-color: $hoverColorPrimary;
+      }
+   }
+   &[color='default'] {
+      background-color: #e0e0e0;
+
+      &:hover,
+      &:focus {
+         background-color: $hoverColorDefault;
+      }
+   }
+   &[color='secondary'] {
+      background-color: #455a64;
+      color: white;
+
+      &:hover,
+      &:focus {
+         background-color: $hoverColorSecondary;
+      }
+   }
+   &[color='danger'] {
+      background-color: #d32f2f;
+      color: white;
+
+      &:hover,
+      &:focus {
+         background-color: $hoverColorDanger;
+      }
+   }
+   // ---- End Color Props
+
+   &[disableshadow='true'] {
+      box-shadow: none !important;
+   }
+
+   // ---- Start Size Props
+   &[size='sm'] {
+      padding: 6px 12px;
+   }
+   &[size='md'] {
+      padding: 6px 16px;
+   }
+   &[size='lg'] {
+      padding: 11px 22px;
+   }
+   // ---- End Size Props
+}

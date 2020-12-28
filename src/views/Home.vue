@@ -1,18 +1,33 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <h1>Recent Project</h1>
+    <!-- Only put filename since on the Figure component -->
+    <!-- is actually returning require("../assets/" + img); (See Figure.vue) -->
+    <div class="showcase">
+      <router-link class="project-link" to="/buttons">
+        <Figure title="Button Components" imgsrc="buttonpage.jpg" />
+      </router-link>
+    </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import Figure from "../components/Figure.vue";
 
 export default {
   name: "Home",
   components: {
-    HelloWorld
+    Figure
   }
 };
 </script>
+
+<style lang="scss" scoped>
+.project-link {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+}
+</style>
