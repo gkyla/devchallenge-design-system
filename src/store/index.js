@@ -2,7 +2,8 @@ import { createStore } from "vuex";
 
 const store = createStore({
   state: {
-    navIsActive: false
+    navIsActive: false,
+    fullWidth: null
   },
 
   actions: {
