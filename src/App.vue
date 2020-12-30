@@ -1,6 +1,6 @@
 <template>
   <layout>
-    <template v-slot:nav>
+    <template #nav>
       <div class="logo">
         <strong class="dev">
           <span class="dev-logo">Dev</span>challenge.io
@@ -19,7 +19,7 @@
       </div>
     </template>
 
-    <template v-slot:main>
+    <template #main>
       <router-view />
     </template>
   </layout>
