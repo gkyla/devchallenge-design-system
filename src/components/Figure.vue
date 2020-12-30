@@ -43,11 +43,14 @@ figure {
     margin-bottom: 1rem;
   }
   img {
+    display: inline-block;
     cursor: pointer;
     transition: 0.2s ease-in-out all;
     object-fit: cover;
+    max-width: 400px;
     width: 100%;
     object-position: center;
+    object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 0 5px 0 rgba($color: #000000, $alpha: 0.3);
 

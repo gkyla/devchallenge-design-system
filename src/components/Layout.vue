@@ -29,11 +29,10 @@ export default {
   setup() {
     const store = useStore();
 
+    const navIsActive = computed(() => store.state.navIsActive);
     function toggleNav() {
       store.dispatch("toggleNav");
     }
-
-    const navIsActive = computed(() => store.state.navIsActive);
 
     return {
       toggleNav,
