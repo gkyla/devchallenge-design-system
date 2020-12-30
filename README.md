@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://gkyla-dev-design-system.netlify.app/buttons">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://devchallenges.io/solutions/XdTuXFDgN6QrUGfIZK0X">
       Solution
     </a>
     <span> | </span>
@@ -56,7 +56,7 @@
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
-I made this with the list of all Design System challenges on the same project. So if i want to do another Design System challenges i'll just do it in this project
+I made this with the list of all Design System challenges on the same project ( currently just Button Component only, for now ). So if i want to do another Design System challenges i'll just do & update this project
 
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/ohgVTyJCbm5OZyTB2gNY) was to build an application to complete the given user stories.
 
