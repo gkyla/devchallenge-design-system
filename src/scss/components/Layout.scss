@@ -5,9 +5,9 @@
 
    .hamburger {
       position: absolute;
-      z-index: 10;
-      top: 25px;
-      right: 25px;
+      z-index: 20;
+      top: 15px;
+      right: 20px;
       padding: 10px;
       transition: 0.3s all ease-in-out;
       cursor: pointer;
@@ -65,20 +65,23 @@
    }
 
    main {
+      position: relative;
       display: flex;
       flex-direction: column;
       min-height: 100vh;
       overflow-x: hidden;
       overflow-y: auto;
-      flex: 1;
+      // flex: 1;
+      width: 100%;
       text-align: left;
       padding: 20px 0;
       padding-left: 30px;
+      padding-right: 30px;
       transition: 0.3s ease-in all;
       background-color: white;
 
       &.navIsActive {
-         background-color: gray;
+         filter: brightness(40%);
       }
    }
 
@@ -89,12 +92,12 @@
    }
 }
 
-@media (min-width: 450px) {
+@media (min-width: 380px) {
    .wrapper {
       .nav {
          // Toggle
          &.active {
-            width: 80vw;
+            width: 240px;
          }
       }
    }
@@ -104,7 +107,7 @@
    .wrapper {
       main {
          &.navIsActive {
-            background-color: unset;
+            filter: brightness(100%);
          }
       }
 

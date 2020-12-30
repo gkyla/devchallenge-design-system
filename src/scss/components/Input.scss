@@ -1,0 +1,148 @@
+*:focus {
+   outline: none;
+}
+
+.input-group {
+   width: 100%;
+   position: relative;
+
+   .label {
+      font-size: 0.8rem;
+
+      &.focused {
+         color: $input-focus-color-default;
+      }
+
+      &[demo='focus'] {
+         color: $input-focus-color-default;
+      }
+
+      &[demo='hover'] {
+         color: black;
+      }
+
+      &[error='true'] {
+         color: $input-color-error !important;
+         border-color: $input-color-error !important;
+
+         &.hovered {
+            color: $input-hover-color !important;
+         }
+
+         &.focused {
+            color: $input-color-error !important;
+         }
+
+         &[demo='error'] {
+            color: $input-color-error;
+
+            &.hovered {
+               color: $input-color-error !important;
+            }
+         }
+      }
+   }
+
+   .input,
+   .textarea {
+      display: flex;
+      // Default Styling
+      font-family: inherit;
+      border: 2px solid #828282;
+      padding: 18px 0 18px 12px;
+      border-radius: 8px;
+      transition: 0.2 ease-in-out all;
+      width: 200px;
+
+      &:disabled {
+         background-color: #e0e0e0;
+      }
+
+      &:hover {
+         border-color: $input-hover-color;
+      }
+      &:focus {
+         // color: $input-focus-color-default;
+         border-color: $input-focus-color-default;
+      }
+
+      // Material Icons Ordering
+      &.start {
+         padding-left: 45px;
+      }
+      &.end {
+         padding-right: 40px;
+      }
+
+      &[error='true'] {
+         color: $input-color-error;
+         border-color: $input-color-error !important;
+
+         &:hover {
+            color: black;
+            border-color: $input-hover-color !important;
+         }
+
+         &.focused {
+            color: $input-color-error !important;
+            border-color: $input-color-error !important;
+         }
+      }
+
+      // Demo
+      &[demo='hover'] {
+         border-color: $input-hover-color;
+      }
+      &[demo='focus'] {
+         color: inherit;
+         border-color: $input-focus-color-default;
+      }
+      &[demo='error'] {
+         color: $input-color-error;
+         border-color: $input-color-error;
+
+         &:hover {
+            color: inherit;
+            border-color: $input-color-error !important;
+         }
+      }
+
+      &.fullwidth {
+         width: 100% !important;
+      }
+   }
+
+   .helpertext {
+      color: $font-helper-color;
+      font-size: 0.7rem;
+      font-weight: 500;
+   }
+
+   .input {
+      &[inputsize='sm'] {
+         padding: 10px 12px !important;
+      }
+   }
+}
+
+.input-wrapper-action {
+   position: relative;
+   font-family: $font-component;
+
+   .material-icons {
+      overflow: hidden;
+      position: absolute;
+      z-index: 10px;
+
+      &.start {
+         top: 50%;
+         transform: translateY(-50%);
+         left: 12px;
+      }
+      &.end {
+         top: 50%;
+         transform: translateY(-50%);
+         right: 12px;
+      }
+   }
+}

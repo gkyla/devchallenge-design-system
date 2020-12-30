@@ -5,7 +5,7 @@
 
 button {
    // Default Styling
-   font-family: 'Noto Sans JP', sans-serif;
+   font-family: $font-component;
    font-weight: 500;
    transition: 0.2s ease-in-out all;
    display: inline-flex;

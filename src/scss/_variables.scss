@@ -1,4 +1,15 @@
-// Button
+$font-component: 'Noto Sans JP', sans-serif;
+$font-helper-color: #828282;
+
+// Input Component
+$input-hover-color: #333333;
+
+$input-color-default: #828282;
+$input-focus-color-default: #2962ff;
+
+$input-color-error: #d32f2f;
+
+// Button Component
 $hoverColorPrimary: #0039cb;
 $hoverColorDefault: #aeaeae;
 $hoverColorSecondary: #1c313a;
@@ -7,5 +18,3 @@ $hoverVariantOutlineText: rgba(
    $color: #2962ff,
    $alpha: 10%,
 );
-
-$lol: red;
