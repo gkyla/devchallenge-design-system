@@ -7,6 +7,9 @@
       <router-link class="project-link" to="/buttons">
         <Figure title="Button Components" imgsrc="buttonpage.jpg" />
       </router-link>
+      <router-link class="project-link" to="/inputs">
+        <Figure title="Input Components" imgsrc="inputpage.png" />
+      </router-link>
     </div>
   </div>
 </template>

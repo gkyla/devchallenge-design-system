@@ -1,165 +1,128 @@
 <template>
   <h1>Buttons</h1>
 
-  <div class="display">
-    <div class="inner">
-      <pre>&lt;Button /&gt;</pre>
-
+  <component-layout>
+    <Item msg="&lt;Button /&gt;">
       <Button></Button>
-    </div>
-    <div class="inner">
-      <pre>&:hover, &:focus</pre>
+    </Item>
 
+    <Item msg="&:hover, &:focus">
       <Button demo="default"></Button>
-    </div>
-  </div>
-  <br />
-  <div class="display">
-    <div class="inner">
-      <pre>&lt;Button variant="outline" /&gt;</pre>
+    </Item>
+  </component-layout>
 
+  <component-layout>
+    <Item msg="&lt;Button variant='outline' /&gt;">
       <Button variant="outline"></Button>
-    </div>
-    <div class="inner">
-      <pre>&:hover, &:focus</pre>
+    </Item>
 
+    <Item msg="&:hover, &:focus">
       <Button variant="outline" demo="outline"></Button>
-    </div>
-  </div>
-  <div class="display">
-    <div class="inner">
-      <pre>&lt;Button variant="text" /&gt;</pre>
+    </Item>
+  </component-layout>
 
+  <component-layout>
+    <Item msg="&lt;Button variant='text' /&gt;">
       <Button variant="text"></Button>
-    </div>
-    <div class="inner">
-      <pre>&:hover, &:focus</pre>
+    </Item>
 
+    <Item msg="&:hover, &:focus">
       <Button variant="text" demo="text"></Button>
-    </div>
-  </div>
-  <div class="display">
-    <div class="inner">
-      <pre>&lt;Button disableShadow /&gt;</pre>
+    </Item>
+  </component-layout>
 
+  <component-layout>
+    <Item msg="&lt;Button disableShadow /&gt;">
       <Button disableShadow></Button>
-    </div>
-    <div class="inner">
-      <pre>&lt;Button disableShadow color="primary" /&gt;</pre>
-
+    </Item>
+    <Item msg="&lt;Button disableShadow color='primary' /&gt;">
       <Button disableShadow color="primary"></Button>
-    </div>
-  </div>
-  <div class="display">
-    <div class="inner">
-      <pre>&lt;Button disabled /&gt;</pre>
+    </Item>
+  </component-layout>
 
+  <component-layout>
+    <Item msg="&lt;Button disabled /&gt;">
       <Button disabled></Button>
-    </div>
-    <div class="inner">
-      <pre>&lt;Button variant="text" disabled /&gt;</pre>
+    </Item>
 
+    <Item msg="&lt;Button variant='text' disabled /&gt;">
       <Button variant="text" disabled></Button>
-    </div>
-  </div>
-  <div class="display">
-    <div class="inner">
-      <pre>&lt;Button startIcon="code" /&gt;</pre>
+    </Item>
+  </component-layout>
 
+  <component-layout>
+    <Item msg="&lt;Button startIcon='code' /&gt;">
       <Button startIcon="code" color="primary"></Button>
-    </div>
-    <div class="inner">
-      <pre>&lt;Button endIcon="code"/&gt;</pre>
+    </Item>
 
+    <Item msg="&lt;Button endIcon='code'/&gt;">
       <Button endIcon="code"></Button>
-    </div>
-  </div>
-  <div class="display">
-    <div class="inner">
-      <pre>&lt;Button size="sm" /&gt;</pre>
+    </Item>
+  </component-layout>
 
+  <component-layout>
+    <Item msg="&lt;Button size='sm'/&gt;">
       <Button size="sm"></Button>
-    </div>
-    <div class="inner">
-      <pre>&lt;Button size="md"/&gt;</pre>
+    </Item>
 
+    <Item msg="&lt;Button size='md'/&gt;">
       <Button size="md"></Button>
-    </div>
-    <div class="inner">
-      <pre>&lt;Button size="lg"/&gt;</pre>
+    </Item>
 
+    <Item msg="&lt;Button size='lg'/&gt;">
       <Button size="lg"></Button>
-    </div>
-  </div>
-  <div class="display">
-    <div class="inner">
-      <pre>&lt;Button color="default" /&gt;</pre>
+    </Item>
+  </component-layout>
 
+  <component-layout>
+    <Item msg="&lt;Button color='default'/&gt;">
       <Button color="default"></Button>
-    </div>
-    <div class="inner">
-      <pre>&lt;Button color="primary"/&gt;</pre>
+    </Item>
 
+    <Item msg="&lt;Button color='primary'/&gt;">
       <Button color="primary"></Button>
-    </div>
-    <div class="inner">
-      <pre>&lt;Button color="secondary"/&gt;</pre>
+    </Item>
 
+    <Item msg="&lt;Button color='secondary'/&gt;">
       <Button color="secondary"></Button>
-    </div>
-    <div class="inner">
-      <pre>&lt;Button color="danger"/&gt;</pre>
+    </Item>
 
+    <Item msg="&lt;Button color='danger'/&gt;">
       <Button color="danger"></Button>
-    </div>
-  </div>
-  <div class="display">
-    <div class="inner">
-      <pre>&:hover, &:focus</pre>
+    </Item>
+  </component-layout>
 
+  <component-layout>
+    <Item msg="&:hover, &:focus">
       <Button color="default" demo="default"></Button>
-    </div>
-    <div class="inner">
+    </Item>
+
+    <Item>
       <Button color="primary" demo="primary"></Button>
-    </div>
-    <div class="inner">
+    </Item>
+
+    <Item>
       <Button color="secondary" demo="secondary"></Button>
-    </div>
-    <div class="inner">
+    </Item>
+
+    <Item>
       <Button color="danger" demo="danger"></Button>
-    </div>
-  </div>
+    </Item>
+  </component-layout>
 </template>
 
 <script>
+import ComponentLayout from "../components/ComponentLayout.vue";
+import Item from "../components/Item.vue";
 import Button from "../components/Button.vue";
 
 export default {
   components: {
-    Button
+    Button,
+    ComponentLayout,
+    Item
   }
 };
 </script>
 
-<style lang="scss" scoped>
-.display {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 35px;
-
-  .inner {
-    margin-top: 20px;
-    align-self: flex-end;
-    margin-right: 30px;
-    flex-basis: 200px;
-  }
-}
-
-@media (min-width: 630px) {
-  .display {
-    .inner {
-      flex-basis: 250px;
-    }
-  }
-}
-</style>
+<style lang="scss" scoped></style>

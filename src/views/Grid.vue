@@ -13,8 +13,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-.bg {
-  background: $lol;
-}
-</style>
+<style lang="scss" scoped></style>
