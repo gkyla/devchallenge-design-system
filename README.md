@@ -1,26 +1,23 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">Design System: Button Components</h1>
+<h1 align="center">Devchallenges: Design System</h1>
+<h3 align="center">  <a href="https://gkyla-dev-design-system.netlify.app/buttons" target="_blank">Button Component</a>  | <a href="https://gkyla-dev-design-system.netlify.app/inputs" target="_blank">Input Component</a> </h3>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
 </div>
 
-<div align="center">
-  <h3>
-    <a href="https://gkyla-dev-design-system.netlify.app/buttons">
-      Demo
-    </a>
-    <span> | </span>
-    <a href="https://devchallenges.io/solutions/XdTuXFDgN6QrUGfIZK0X">
-      Solution
-    </a>
-    <span> | </span>
-    <a href="https://devchallenges.io/challenges/ohgVTyJCbm5OZyTB2gNY">
-      Challenge
-    </a>
-  </h3>
-</div>
+### Solution
+
+-  [Button Component](https://devchallenges.io/solutions/XdTuXFDgN6QrUGfIZK0X)
+-  [Input Component](#)
+
+### Challenge
+
+-  [Button Component](https://devchallenges.io/challenges/ohgVTyJCbm5OZyTB2gNY)
+-  [Input Component](#)
+
+<hr>
 
 <!-- TABLE OF CONTENTS -->
 
@@ -36,13 +33,17 @@
 
 ## Overview
 
-### - Home
+#### - Home
 
-![Home](https://user-images.githubusercontent.com/67510503/103248706-71edc380-499e-11eb-8f51-55e0f74bb2f4.png)
+![Home](https://user-images.githubusercontent.com/67510503/103363564-f3a03700-4aed-11eb-92ca-4e554176ef3b.png)
 
-### - Button Component page
+#### - Button
 
-![Buttons Page](https://user-images.githubusercontent.com/67510503/103248610-ed9b4080-499d-11eb-9c9c-aa0e8c75c208.PNG)
+![Button](https://user-images.githubusercontent.com/67510503/103363566-f4d16400-4aed-11eb-98ca-59bb6df179e4.png)
+
+#### - Input
+
+![Input](https://user-images.githubusercontent.com/67510503/103363561-f26f0a00-4aed-11eb-805f-8a8f607765e8.png)
 
 ### Built With
 
@@ -73,10 +74,7 @@ $ git clone https://github.com/gkyla/devchallenges-design-system
 # Install dependencies
 $ npm install
 
-# Run the app
-$ npm start
-
-# Compiles and hot-reloads for development
+# Compiles , hot-reloads for development & Run the app
 $ npm run serve
 
 # Compiles and minifies for production
