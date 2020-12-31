@@ -20,7 +20,11 @@
     </template>
 
     <template #main>
-      <router-view />
+      <router-view v-slot="{ Component }">
+        <transition name="fade" mode="out-in" appear>
+          <component :is="Component" />
+        </transition>
+      </router-view>
     </template>
   </layout>
 </template>
@@ -61,6 +65,50 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+// Transition
+
+// If want Both Enter & Leave (More Smooth)
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: 0.15s ease-in all;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+.fade-enter-to,
+.fade-leave-from {
+  opacity: 1;
+}
+
+// If want only on Enter
+
+// .fade-enter-active {
+//   transition: 0.1s ease-in all;
+// }
+
+// .fade-enter-from {
+//   opacity: 0;
+// }
+// .fade-enter-to {
+//   opacity: 1;
+// }
+
+// If want only on leave
+
+// .fade-leave-active {
+//   transition: 0.1s ease-in all;
+// }
+
+// .fade-leave-from {
+//   opacity: 0;
+// }
+// .fade-leave-to {
+//   opacity: 1;
+// }
 
 * {
   box-sizing: border-box;
