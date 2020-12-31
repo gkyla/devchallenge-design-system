@@ -1,4 +1,3 @@
-<!-- Please update value in the {}  -->
 
 <h1 align="center">Devchallenges: Design System</h1>
 <h3 align="center">  <a href="https://gkyla-dev-design-system.netlify.app/buttons" target="_blank">Button Component</a>  | <a href="https://gkyla-dev-design-system.netlify.app/inputs" target="_blank">Input Component</a> </h3>
@@ -10,12 +9,12 @@
 ### Solution
 
 -  [Button Component](https://devchallenges.io/solutions/XdTuXFDgN6QrUGfIZK0X)
--  [Input Component](#)
+-  [Input Component](https://devchallenges.io/solutions/qPtcbCNy8ZnzY669MpAH)
 
 ### Challenge
 
 -  [Button Component](https://devchallenges.io/challenges/ohgVTyJCbm5OZyTB2gNY)
--  [Input Component](#)
+-  [Input Component](https://devchallenges.io/challenges/TSqutYM4c5WtluM7QzGp)
 
 <hr>
 
