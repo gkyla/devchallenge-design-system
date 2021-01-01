@@ -1,5 +1,5 @@
 <template>
-  <div class="inner">
+  <div :class="style.inner">
     <pre>{{ msg }}</pre>
 
     <slot></slot>
@@ -7,14 +7,23 @@
 </template>
 
 <script>
+import { useCssModule } from "vue";
 export default {
   props: {
     msg: String
+  },
+
+  setup() {
+    const style = useCssModule();
+
+    return {
+      style
+    };
   }
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" module>
 .inner {
   position: relative;
   margin-top: 20px;

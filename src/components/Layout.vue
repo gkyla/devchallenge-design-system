@@ -1,18 +1,17 @@
 <template>
-  <div class="wrapper">
+  <div :class="style.wrapper">
     <button
-      class="hamburger"
-      :class="{ navisactive: navIsActive }"
+      :class="[navIsActive ? style.navisactive : '', style.hamburger]"
       @click="toggleNav"
     >
       <img src="../assets/menu.svg" alt="Menu Icon" />
     </button>
 
-    <nav class="nav" :class="{ active: navIsActive }">
+    <nav :class="[navIsActive ? style.active : '', style.nav]">
       <slot name="nav"></slot>
     </nav>
 
-    <main :class="{ navIsActive: navIsActive }">
+    <main :class="[navIsActive ? style.navIsActive : '']">
       <slot name="main"></slot>
       <footer>
         Agits Zakky Akmala @ DevChallenges.io
@@ -22,12 +21,14 @@
 </template>
 
 <script>
-import { computed } from "vue";
+import { computed, useCssModule } from "vue";
 import { useStore } from "vuex";
 
 export default {
   setup() {
     const store = useStore();
+    const style = useCssModule();
+    console.log(style);
 
     const navIsActive = computed(() => store.state.navIsActive);
     function toggleNav() {
@@ -36,10 +37,11 @@ export default {
 
     return {
       toggleNav,
-      navIsActive
+      navIsActive,
+      style
     };
   }
 };
 </script>
 
-<style lang="scss" src="../scss/components/Layout.scss" scoped></style>
+<style lang="scss" src="../scss/components/Layout.scss" module></style>

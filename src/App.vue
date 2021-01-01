@@ -43,6 +43,7 @@ export default {
   setup() {
     const store = useStore();
     const router = useRouter();
+
     const routerPaths = computed(() => {
       return router.options.routes;
     });
@@ -146,7 +147,7 @@ body {
   }
 
   &:not(:first-child) {
-    margin: 10px;
+    margin: 10px 0;
   }
 
   &.router-link-active {
@@ -173,7 +174,7 @@ body {
 
 .logo {
   margin-top: 47px;
-  margin-bottom: 122px;
+  margin-bottom: 50px;
   padding-left: 30px;
   text-align: left;
 

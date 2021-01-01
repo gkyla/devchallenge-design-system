@@ -27,14 +27,12 @@ button {
       background-color: #aeaeae;
    }
 
-   .material-icons {
-      &.starticon {
-         padding-right: 10px;
-      }
+   .starticon {
+      padding-right: 10px;
+   }
 
-      &.endicon {
-         padding-left: 10px;
-      }
+   .endicon {
+      padding-left: 10px;
    }
 
    // ---- Demo Hover & Focus
